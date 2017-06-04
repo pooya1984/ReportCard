@@ -15,16 +15,16 @@ import java.util.ArrayList;
  *
  */
 
-public class WordAdapter extends ArrayAdapter<Word> {
+public class WordAdapter extends ArrayAdapter<ReportCard> {
 
 /**
  * Create a new {@link WordAdapter} object.
  * @param context is the current context (i.e. Activity) that the adapter is being created in.
- * @param avrregeMarks is the list of {@link Word}s to be displayed.
+ * @param avrrageMarks is the list of {@link ReportCard}s to be displayed.
  * */
 
-    public WordAdapter(Context context, ArrayList<Word> avrregeMarks) {
-        super(context, 0, avrregeMarks);}
+    public WordAdapter(Context context, ArrayList<ReportCard> avrrageMarks) {
+        super(context, 0, avrrageMarks);}
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -34,7 +34,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }
-        Word currentWord = getItem(position);
+        ReportCard currentWord = getItem(position);
 
         TextView matheTextView = (TextView) listItemView.findViewById(R.id.mathemathics);
         matheTextView.setText(currentWord.getMathe());

@@ -4,9 +4,9 @@ package com.example.android.reportcard;
  * Created by Sharareh on 6/3/2017.
  */
 
-public class Word {
+public class ReportCard {
 
-        /** Default translation for the Word */
+        /** Default translation for the ReportCard */
         private String mMathe;
         private String mAsseOne;
         private String mAsseTwo;
@@ -20,7 +20,7 @@ public class Word {
 
 
 
-    public Word(String Mathe,String AsseOne,String AsseTwo,String Finaly,int imageResourceId) {
+    public ReportCard(String Mathe, String AsseOne, String AsseTwo, String Finaly, int imageResourceId) {
         mMathe = Mathe;
         mAsseOne=AsseOne;
         mAsseTwo=AsseTwo;
@@ -39,9 +39,11 @@ public class Word {
         return mImageResourceId != NO_IMAGE_PROVIDED;
     }
 
+
+
     @Override
     public String toString() {
-        return "Word{" +
+        return "ReportCard{" +
                 "mMathe='" + mMathe + '\'' +
                 ", mAsseOne='" + mAsseOne + '\'' +
                 ", mAsseTwo='" + mAsseTwo + '\'' +
