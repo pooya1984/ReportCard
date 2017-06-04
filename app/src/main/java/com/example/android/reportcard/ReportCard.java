@@ -1,54 +1,66 @@
 package com.example.android.reportcard;
 
 /**
- * Created by Sharareh on 6/3/2017.
+ * Created by Pooya on 6/4/2017.
  */
 
+
 public class ReportCard {
+    private String Mathemathic;
+    private String AssessmentOne;
+    private String AssessmentTwo;
+    private String Final;
 
-        /** Default translation for the ReportCard */
-        private String mMathe;
-        private String mAsseOne;
-        private String mAsseTwo;
-        private String mFinaly;
-
-    /** Image resource ID for the word */
-    private int mImageResourceId = NO_IMAGE_PROVIDED;
-
-    /** Constant value that represents no image was provided for this word */
-    private static final int NO_IMAGE_PROVIDED = -1;
-
-
-
-    public ReportCard(String Mathe, String AsseOne, String AsseTwo, String Finaly, int imageResourceId) {
-        mMathe = Mathe;
-        mAsseOne=AsseOne;
-        mAsseTwo=AsseTwo;
-        mFinaly=Finaly;
-        mImageResourceId = imageResourceId;
+    public ReportCard (String Mathemathic,String AssessmentOne,String AssessmentTwo,String Final) {
+        this.Mathemathic = Mathemathic;
+        this.AssessmentOne = AssessmentOne;
+        this.AssessmentTwo = AssessmentTwo;
+        this.Final = Final;
     }
 
 
-    public String getMathe() {return mMathe;}
-    public String getAsseOne(){return mAsseOne;}
-    public String getAsseTwo(){return mAsseTwo;}
-    public String getFinay(){return mFinaly;}
-    public int getImageResourceId(){return mImageResourceId;}
+    public String getMathemathic() {
+        return Mathemathic;
+    }
 
-    public boolean hasImage() {
-        return mImageResourceId != NO_IMAGE_PROVIDED;
+    public String getAssessmentOne() {
+        return AssessmentOne;
+    }
+
+    public String getAssessmentTwo() {
+        return AssessmentTwo;
+    }
+
+    public String Final() {
+        return Final;
     }
 
 
+    //Setters
+
+    public void setMathemathic(String Mathemathic ) {
+        this.Mathemathic = Mathemathic;
+    }
+
+    public void setAssessmentOne(String AssessmentOne ) {
+        this.AssessmentOne = AssessmentOne;
+    }
+
+    public void setAssessmentTwo(String AssessmentTwo ) {
+        this.AssessmentTwo = AssessmentTwo;
+    }
+
+    public void Final(String Final ) {
+        this.Final = Final;
+    }
 
     @Override
     public String toString() {
         return "ReportCard{" +
-                "mMathe='" + mMathe + '\'' +
-                ", mAsseOne='" + mAsseOne + '\'' +
-                ", mAsseTwo='" + mAsseTwo + '\'' +
-                ", mFinaly='" + mFinaly + '\'' +
-                ", mImageResourceId=" + mImageResourceId +
+                "Mathemathic='" + Mathemathic + '\'' +
+                ", AssessmentOne='" + AssessmentOne + '\'' +
+                ", AssessmentTwo='" + AssessmentTwo + '\'' +
+                ", Final='" + Final + '\'' +
                 '}';
     }
 }
